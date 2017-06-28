@@ -4,7 +4,8 @@ This demo contains 2 third party APIs (Google and PubNub). Google MAPS API is us
 
 It is just static Demo. You need to get your Google Map and PubNub API Keys and put it in the `Dialog Box`to make this demo working.
 
-[PubNub Keys](https://admin.pubnub.com/)
-[Google Map](https://console.developers.google.com/cloud-resource-manager)
+You can create your Project and get your Keys from here:
+1. [PubNub Keys](https://admin.pubnub.com/)
+2. [Google Map](https://console.developers.google.com/cloud-resource-manager)
 
 To check the Live Demo, Please Check it from [here](https://samiahmedsiddiqui.github.io/tracking-demo/index.html)
