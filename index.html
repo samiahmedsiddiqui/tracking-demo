@@ -2,11 +2,21 @@
 <html>
 	<head>
 		<title>Google Maps Example</title>
-<!-- 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" />
-		 -->	
+		<meta charset="UTF-8">
+		<meta name="description" content="Google Maps Example Using PubNub">
+		<meta name="keywords" content="HTML,JavaScript,PubNub,Google Maps">
+		<meta name="author" content="Sami Ahmed Siddiqui">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109088659-1"></script>
 	</head>
 	<body>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-109088659-1');
+		</script>
 		<div class="container">
 			<div id="error" style="display: none;">
 				<h1>PubNub Google Maps Example</h1>
@@ -14,7 +24,7 @@
 			<div id="map-canvas"></div>
 		</div>
 		<div id="attach-scripts">
-			<script src="script.js"></script>
+			<script src="js/script.min.js"></script>
 		</div>
 	</body>
 </html>
