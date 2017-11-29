@@ -93,7 +93,7 @@ navigator.geolocation.getCurrentPosition( function(position) {
 
 cdnPubNubScript = document.createElement('script');
 cdnPubNubScript.type = 'text/javascript';
-cdnPubNubScript.src = 'js/pubnub.4.17.0.min.js';
+cdnPubNubScript.src = 'js/pubnub.4.18.0.min.js';
 
 attachScripts.appendChild(cdnPubNubScript);
 
