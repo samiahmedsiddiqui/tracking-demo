@@ -13,7 +13,7 @@ var map,
 
     windowWidth = window.innerWidth + 'px',
     windowHeight = window.innerHeight + 'px';
-  
+
 var pnChannel = "map-channel";
 
 /**
@@ -92,8 +92,7 @@ navigator.geolocation.getCurrentPosition( function(position) {
 });
 
 cdnPubNubScript = document.createElement('script');
-cdnPubNubScript.type = 'text/javascript';
-cdnPubNubScript.src = 'js/pubnub.4.18.0.min.js';
+cdnPubNubScript.src = 'js/pubnub.4.20.1.min.js';
 
 attachScripts.appendChild(cdnPubNubScript);
 
@@ -102,7 +101,6 @@ window.onload = function () {
 }
 
 mapApiScript = document.createElement('script');
-mapApiScript.type = 'text/javascript';
 mapApiScript.src = 'https://maps.googleapis.com/maps/api/js?key=' + mapApiKey + '&callback=initialize';
 
 attachScripts.appendChild(mapApiScript);
