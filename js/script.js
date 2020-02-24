@@ -1,18 +1,18 @@
 window.lat = 37.8199;
 window.lng = -122.4783;
-var map,
-    mark,
-    lineCoords = [],
+var map;
+var mark;
+var lineCoords = [];
 
-    attachScripts = document.getElementById('attach-scripts'),
-    mapPosition = document.getElementById('map-canvas'),
+var attachScripts = document.getElementById("attach-scripts");
+var mapPosition = document.getElementById("map-canvas");
 
-    publishKey = 'pub-c-2cf58359-5a15-4aa5-8128-b1df55439b9d',
-    subscribeKey = 'sub-c-2e405b3c-347d-11e7-bb5c-02ee2ddab7fe',
-    mapApiKey = 'AIzaSyCNKAUfM9XewDk1DowUNDOhVI_SZhym9Vw',
+var publishKey = "pub-c-2cf58359-5a15-4aa5-8128-b1df55439b9d";
+var subscribeKey = "sub-c-2e405b3c-347d-11e7-bb5c-02ee2ddab7fe";
+var mapApiKey = "AIzaSyCNKAUfM9XewDk1DowUNDOhVI_SZhym9Vw";
 
-    windowWidth = window.innerWidth + 'px',
-    windowHeight = window.innerHeight + 'px';
+var windowWidth = window.innerWidth + "px";
+var windowHeight = window.innerHeight + "px";
 
 var pnChannel = "map-channel";
 
@@ -80,7 +80,7 @@ var redraw = function (payload) {
     var lineCoordinatesPath = new google.maps.Polyline({
         path: lineCoords,
         geodesic: true,
-        strokeColor: '#2E10FF'
+        strokeColor: "#2E10FF"
     });
 
     lineCoordinatesPath.setMap(map);
@@ -91,8 +91,8 @@ navigator.geolocation.getCurrentPosition( function(position) {
     window.lng = position.coords.longitude;
 });
 
-cdnPubNubScript = document.createElement('script');
-cdnPubNubScript.src = 'js/pubnub.4.20.1.min.js';
+cdnPubNubScript = document.createElement("script");
+cdnPubNubScript.src = "js/pubnub.4.27.3.min.js";
 
 attachScripts.appendChild(cdnPubNubScript);
 
@@ -100,8 +100,8 @@ window.onload = function () {
     initializePubNub();
 }
 
-mapApiScript = document.createElement('script');
-mapApiScript.src = 'https://maps.googleapis.com/maps/api/js?key=' + mapApiKey + '&callback=initialize';
+mapApiScript = document.createElement("script");
+mapApiScript.src = "https://maps.googleapis.com/maps/api/js?key=" + mapApiKey + "&callback=initialize";
 
 attachScripts.appendChild(mapApiScript);
 
