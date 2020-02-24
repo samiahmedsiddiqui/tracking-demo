@@ -9,7 +9,7 @@ var mapPosition = document.getElementById("map-canvas");
 
 var publishKey = "pub-c-2cf58359-5a15-4aa5-8128-b1df55439b9d";
 var subscribeKey = "sub-c-2e405b3c-347d-11e7-bb5c-02ee2ddab7fe";
-var mapApiKey = "AIzaSyCNKAUfM9XewDk1DowUNDOhVI_SZhym9Vw";
+var mapApiKey = "AIzaSyALYyxMI1XeZGReQ3y8V6Q14PtUFq_i1Uc";
 
 var windowWidth = window.innerWidth + "px";
 var windowHeight = window.innerHeight + "px";
